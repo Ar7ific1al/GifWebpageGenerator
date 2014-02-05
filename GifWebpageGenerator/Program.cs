@@ -40,7 +40,7 @@ namespace GifWebpageGenerator
                 string filename = gif.Substring(sourceDir.Length);
                 string filenameNoExtension = ((gif.Substring(sourceDir.Length)).Split('.'))[0];
 
-                writer.WriteLine("<img src=\"" + pageName + "/" + filename + "\" alt=\"" + textInfo.ToTitleCase(filenameNoExtension) + "\">");
+                writer.WriteLine("<img src=\"" + extension + "/" + filename + "\" alt=\"" + textInfo.ToTitleCase(filenameNoExtension) + "\">");
 
                 Console.WriteLine("File \"" + filename + "\" added to webpage.");
             }
